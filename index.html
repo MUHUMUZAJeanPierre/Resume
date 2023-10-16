@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portifolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/fce33c62a7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="stickyNav">
+                <img src="images/logo.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SKILLS</a></li>
+                    <li><a href="#portifolio">PORTIFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Software developer </h1>
+                <p>Hi, I'm <span>MUHUMUZA Jean Pierre</span>  a full time web<br> developer 
+                    with a strong passion to make<br> community impact by using digital skill.</p>
+                    <button class="btn btn2">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+<!-- about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/back.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>I am a proficient software developer in HTML and CSS with intermediate skills in JavaScript and Python, Actively pursuing growth, I am taking short courses 
+                        and collaborating to enhance my expertise.
+                        My main objective is to use theseskills to tackle gloabal issues by creating user-friendly application
+                        that empower individuals to monetizeand enhance their talents.
+                    </p>
+
+                    <div class="tab-titles ">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing web/app interfaces</li>
+                            <li><span>VIDEO EDITOR && PHOTO EDITOR</span><br>Web app Development</li>
+                            <li><span>WEB DEVELOPMENT</span><br>Building Android/Ios apps</li>
+                            <li><span>APP DEVELOPMENT</span><br>Building Android/Ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"  id="experience">
+                        <ul>
+                            <li><span>UI/UX DESIGN</span><br>UI/UX coursera platform</li>
+                            <li><span>PHOTO EDITOR</span><br>Photo and Video editor by using Adobe Photoshop</li>
+                            <li><span>WEB DEVELOPMENT</span><br>Web app Development at ALU and t</li>
+                            <li><span>APP DEVELOPMENT</span><br>Building Android/Ios Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br>Bachelor in Software Engineering at African Leadership University(ALU)</li>
+                            <li><span>2019 - 2021</span><br>Advanced Level at Groupe Scolaire Officiel De Butare</li>
+                            <li><span>2018 - 2019</span><br>Advanced Level at  St Joseph KABGAYI</li>
+                            <li><span>2015 - 2017</span><br>Ordinary Level at Groupe Scolaire St Francois D'assise De Kansi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">SKILLS</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX DESIGN</h2>
+                    <p>
+                        I have advanced skill in UI/UX Design skills that I'm consistently improving too. I anticipate
+                        engaging in a significant project soon to further enhance my abilities.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>WEB DEVELOPMENT</h2>
+                    <p>
+                        With a dept web Development skills honed through diverse projects, I'm poised to joing forces with
+                        a fellow partivipant for a substantial collaborative.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        With a dept web Development skills honed through diverse projects, I'm poised to joing forces with
+                        a fellow partivipant for a substantial collaborative.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- portifolio -->
+<div id="portifolio">
+    <div class="container">
+        <h1 class="sub-title">MY PORTIFOLIO</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/ui and ux image.jpg" alt="">
+                <div class="layer">
+                    <h3>To do App</h3>
+                    <p>
+                        Apps work by executing a set of instructions and utilizing the device's hardware and software resources to provide a user-friendly interface and deliver the intended 
+                        functionality, such as browsing the internet
+                    </p>
+                    <a href="./todolist.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ui and ux image.jpg" alt="">
+                <div class="layer">
+                    <h3>Weather Application</h3>
+                    <p>
+                        A weather app works by connecting to online weather data sources, such as meteorological services or 
+                        weather APIs, to retrieve real-time weather information for a specific location. 
+                    </p>
+                    <a href="weather.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ui and ux image.jpg" alt="">
+                <div class="layer">
+                    <h3>MOBILE APPLICATION</h3>
+                    <p>
+                        
+                        With a dept web Development skills honed through diverse projects, I'm poised to joing forces with
+                        a fellow partivipant for a substantial collaborative.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- contact me section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0784127871</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CURRICULUM VITAE(mtn).pdf" download  class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="sendMail(); return false;">
+                    <label for="Name">Name:</label>
+                    <input id="Name" type="text" name="Name" placeholder="Your Name" required>
+                    
+                    <label for="Email" class="email">Email:</label>
+                    <input  id="Email" type="email" name="Email" placeholder="Your Email" required>
+
+                    <label for="Phone" class="Replied">Replied To:</label>
+                    <input id="replyto" type="phone" name="phone" placeholder="Replied To" required>
+                    
+                    <label for="Message">Message:</label>
+                    <textarea id="Message" name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                    
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ MUHUMUZA Jean Pierre.</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+
+    <!-- form -->
+
+    <script>
+        // Initialize EmailJS with your user ID
+        emailjs.init("KHsegh3YmxHitdn0N");
+  
+        function sendMail() {
+          let params = {
+            sendername: document.querySelector("#Name").value,
+            to: document.querySelector("#Email").value,
+            replyto: document.querySelector("#replyto").value,
+            message: document.querySelector("#Message").value,
+          };
+          let serviceID = "service_xwbyyam";
+          let templateID = "template_drfoba4";
+  
+          // Send the email
+          emailjs
+            .send(serviceID, templateID, params)
+            .then((response) => {
+              alert("Email sent successfully");
+            })
+            .catch((error) => {
+              console.log("Error sending email:", error);
+              alert("An error occurred while sending the email");
+            });
+        }
+      </script>
+      <script>
+      window.addEventListener('scroll', function () {
+        var stickyNav = document.getElementById("stickyNav");
+        var header = document.getElementById("header");
+        var headerHeight = header.offsetHeight;
+    
+        if (window.pageYOffset >= headerHeight) {
+            stickyNav.classList.add("sticky");
+        } else {
+            stickyNav.classList.remove("sticky");
+        }
+    });
+    </script>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+
+</body>
+</html>
