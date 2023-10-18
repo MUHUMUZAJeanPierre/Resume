@@ -445,6 +445,7 @@ textarea::placeholder{
   .sticky {
     position: fixed;
     top: 0;
+    left: 17px;
     width: 100%;
     background-color: #333;
   }
